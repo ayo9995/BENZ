@@ -2,6 +2,8 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
+import NowShowing from "./components/NowShowing";
+import ComingSoon from "./components/ComingSoon"
 
 
 function App() {
@@ -9,8 +11,10 @@ function App() {
 
   return (
     <>
-      <Header />
+ <Header />
       <Slider/>
+      <NowShowing/>
+      <ComingSoon/>
       <Footer />
     </>
   );
