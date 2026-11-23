@@ -1,30 +1,37 @@
-a.nav-link{
+a.nav-link {
   color: white;
   font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+ 
 }
-a.nav-link:hover{
+a.nav-link:hover {
   color: grey;
 }
-.carousel-item img{
- 
-  height: 500px;
+.carousel-item img {
+  min-height: 400px;
+  height: 600px;
   width: 100%;
   object-fit: cover;
 }
-footer .nav{
+
+footer .nav {
   flex-direction: column;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
 }
-.Moviecard  {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  text-transform: capitalize;
+footer .nav {
+  flex-direction: column;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.testme {
+  height: 500px;
+  background-color: chocolate;
+  width: 300px;
+}
+.testme h4{
+  display: none;
 }
 body{
-  background-color: black;
+  background-image: linear-gradient(to right, black, rgb(214, 129, 18));
 
 }
 .movie-card{
@@ -32,6 +39,8 @@ body{
   overflow: hidden;
   border-radius: 20px;
  cursor: pointer;
+ text-align: center;
+ font-size: 25px;
 }
 .movie-card img{
   width: 100%;
@@ -44,12 +53,62 @@ body{
 }
 .movie-overlay{
   position: absolute;
-  top: 0;
+  top: 80px;
   width: 100%;
   height: 100%;
   opacity: 0;
-
+   
 }
 .movie-card:hover .movie-overlay{
   opacity: 1;
+}
+.movie-overlay button:first-child{
+  border-radius: 10px;
+
+ 
+}
+.button{
+  border-radius: 0px;
+  border: none;
+  padding: 20px 35px;
+  background-color: purple;
+  color: white;
+
+}
+.button:hover{
+  background-color: black;
+  color: white;
+ 
+}
+.all-caps {
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.movie-overlay button:last-child{
+  padding: 5px 35px;
+}
+.more-info {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.more-info:hover {
+  opacity: 0.2;
+}
+.dur{
+ padding: 15px;
+}
+.ticket:hover{
+  transition: opacity 0.5s ease-in-out;
+  background-color: black;
+  color: white;
+ 
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+#basic-nav-dropdown{
+  color: white;
 }

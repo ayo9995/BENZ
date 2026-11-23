@@ -25,19 +25,28 @@ const MovieCard = ({ movie }) => {
           </Button>
           </div>
 
+        <div className='bg-black text-white h-100 mt-2 '>
           {/* Movie title*/}
-          <Card.Title>{movie.title}</Card.Title>
+          <Card.Title className="all-caps">{movie.title}</Card.Title>
 
           {/* */}
 
-        
-
-
-          {/* */}
-          <Button>Explore Vehicle</Button>
-
+          <div className="dur">
+            <span>🕜{movie.duration}</span> | <span>{movie.rating}</span>
+          </div>
+<div>
+<div className="text-center border-top border-secondary mt-0 py-3">
+          {/* Buy Ticket*/}
+          <Button className="ticket">PURCHASE NOW</Button>
+          </div>
+<div>
           {/* More Info */}
-          <a href="">More Info →</a>
+          <a href="" className="more-info">More Info →</a>
+          </div>
+          
+  
+          </div>
+        </div>
         </div>
       </Card>
     </div>
@@ -45,3 +54,4 @@ const MovieCard = ({ movie }) => {
 };
 
 export default MovieCard;
+ 

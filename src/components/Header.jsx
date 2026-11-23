@@ -14,6 +14,18 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/Home">Home</Nav.Link>
+
+             <NavDropdown title="Movies" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#">Now Showing </NavDropdown.Item>
+              <NavDropdown.Item href="#">
+                Coming Soon
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link href="/About">About</Nav.Link>
             <Nav.Link href="/Movies">Movies</Nav.Link>
             <Nav.Link href="/Booking">Booking</Nav.Link>

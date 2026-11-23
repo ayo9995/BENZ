@@ -57,14 +57,27 @@ customer experiences.</p>
       </Nav>
         
         </Col>
-        <Col><h5>ABOUT US</h5>
+    <Col><h5>ABOUT US</h5>
         <Nav>
         <Nav.Link href="/Booking">Our Story</Nav.Link>
-        <Nav.Link href="/Booking">Sustainability</Nav.Link>
-        <Nav.Link href="/Booking">Innovation</Nav.Link>
-        <Nav.Link href="/Booking">News & Events</Nav.Link>
         <Nav.Link href="/Booking">Careers</Nav.Link>
+        <Nav.Link href="/Booking">Press&Media</Nav.Link>
+        <Nav.Link href="/Booking">Partnerships</Nav.Link>
+        <Nav.Link href="/Booking">Community</Nav.Link>
         <Nav.Link href="/Booking">Contact Us</Nav.Link>
+    
+        </Nav>
+        
+        </Col>
+
+         <Col><h5>FOLLOW</h5>
+        <Nav>
+        <Nav.Link href="https://www.facebook.com" target='_blank'>Facebook</Nav.Link>
+        <Nav.Link href="/Booking">Instagram</Nav.Link>
+        <Nav.Link href="/Booking">Press&Media</Nav.Link>
+        <Nav.Link href="/Booking">X (twitter)</Nav.Link>
+        <Nav.Link href="/Booking">Youtube</Nav.Link>
+        
     
         </Nav>
         
