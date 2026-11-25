@@ -16,8 +16,8 @@ function Header() {
             <Nav.Link href="/Home">Home</Nav.Link>
 
              <NavDropdown title="Movies" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#">Now Showing </NavDropdown.Item>
-              <NavDropdown.Item href="#">
+              <NavDropdown.Item href="nowshowing">Now Showing </NavDropdown.Item>
+              <NavDropdown.Item href="comingsoon">
                 Coming Soon
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -26,11 +26,10 @@ function Header() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/About">About</Nav.Link>
-            <Nav.Link href="/Movies">Movies</Nav.Link>
-            <Nav.Link href="/Booking">Booking</Nav.Link>
-            <Nav.Link href="/Services">Services</Nav.Link>
-             <Nav.Link href="/Contact">Contact</Nav.Link>
+            <Nav.Link href="/aboutus" >About Us</Nav.Link>
+           
+            <Nav.Link href="/services">Services</Nav.Link>
+             <Nav.Link href="/contact">Contact Us</Nav.Link>
            <button style={{ backgroundColor: 'grey',
              color: 'white', 
              border: 'none',

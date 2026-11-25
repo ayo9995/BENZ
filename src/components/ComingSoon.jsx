@@ -60,24 +60,21 @@ const ComingSoon = () => {
   return (
     <div>
     <section className='now-showing  text-white py-5 px-0'>
-         <Container fluid>
+         <Container fluid className='px-4 px-lg-5'>
 
 
-            <div>
-               
-                <h1>Coming Soon</h1>
-            </div>
+            <div className='mb-4'>
+  <p>Experience the Magic</p>
+  <h1>Coming Soon</h1>
+</div>
 
-      <Row>
-        {movies.map((movie) => (
-            <Col lg={3} key={movie.id}>
-
-
-            
-        <MovieCard movie={movie} />
-            </Col>
-        ))}
-      </Row>
+  <Row className="g-3">
+  {movies.map((movie) => (
+    <Col lg={2} md={4} sm={6} key={movie.id}>
+      <MovieCard movie={movie} />
+    </Col>
+  ))}
+</Row>
 
          </Container>
     </section>

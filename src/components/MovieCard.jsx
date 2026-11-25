@@ -6,52 +6,47 @@ import Card from "react-bootstrap/Card";
 
 const MovieCard = ({ movie }) => {
   return (
-    <div>
-      <Card className='movie-card position-relative border-0'>
-        {/* Movie poster   */}
-       <Card.Img variant="top" src={movie.poster} alt={movie.title}  />
+    <Card
+      className="movie-card position-relative border-0"
+      style={{ aspectRatio: "2 / 3", overflow: "hidden", borderRadius: "16px" }}
+    >
+      {/* Poster */}
+      <Card.Img
+        src={movie.poster}
+        alt={movie.title}
+        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      />
 
-        {/* Top-right  Age Rating Badge    */}
-       <Badge bg="black" className='movie-rating position-absolute top-0 end-0 m-2 p-3'>{movie.rating}</Badge>
+      {/* Top-right badge (only shows if the movie has a rating) */}
+      {movie.rating && (
+        <Badge
+          bg="black"
+          className="movie-rating position-absolute top-0 end-0 m-2 p-2"
+        >
+          {movie.rating}
+        </Badge>
+      )}
 
-        {/* overly content  */}
-
-       <div className="movie-overlay">
-
-          <div className='text-center'>
-          <Button variant='danger' size='sm'>
-          
-            <span>▶</span>View Exterior
+      {/* Overlay content */}
+      <div className="movie-overlay">
+        <div className="text-center">
+          <Button variant="danger" size="sm">
+            <span>▶</span> View Exterior
           </Button>
-          </div>
+        </div>
 
-        <div className='bg-black text-white h-100 mt-2 '>
-          {/* Movie title*/}
+        <div className="bg-black text-white mt-2">
           <Card.Title className="all-caps">{movie.title}</Card.Title>
 
-          {/* */}
+          <div className="text-center border-top border-secondary py-3">
+            <Button className="ticket">PURCHASE NOW</Button>
+          </div>
 
-          <div className="dur">
-            <span>🕜{movie.duration}</span> | <span>{movie.rating}</span>
-          </div>
-<div>
-<div className="text-center border-top border-secondary mt-0 py-3">
-          {/* Buy Ticket*/}
-          <Button className="ticket">PURCHASE NOW</Button>
-          </div>
-<div>
-          {/* More Info */}
-          <a href="" className="more-info">More Info →</a>
-          </div>
-          
-  
-          </div>
+          <a href="#" className="more-info">More Info →</a>
         </div>
-        </div>
-      </Card>
-    </div>
+      </div>
+    </Card>
   );
 };
 
 export default MovieCard;
- 
